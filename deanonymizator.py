@@ -26,7 +26,7 @@ def load_system_message(file_path: str) -> str:
 #//////////////////////////////////// API CONFIGURATION ///////////////////////////////////////
 
 # Initialize the API Client (API key must be provided as an environment variable or prompt the user)
-client = AsyncGroq(api_key=None)  # Replace `None` with your API key or fetch from an environment variable.
+client = AsyncGroq(api_key="None")  # Replace `None` with your API key or fetch from an environment variable.
 
 # Asynchronous function to interact with the API
 async def fetch_chat_completion(system_message: str, user_message: str, model: str) -> str:
