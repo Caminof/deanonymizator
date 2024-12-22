@@ -12,10 +12,6 @@ To run DEANONYMIZATOR, ensure you have the following dependencies installed:
 
 - **Python 3.8 or later**
 - **Required Libraries** (installable via `pip`):
-  - `argparse`: For parsing command-line arguments
-  - `asyncio`: To manage asynchronous operations
-  - `pathlib`: For handling file paths
-  - `datetime`: To generate timestamped output filenames
   - `groq`: To interact with the Groq API
 
 ---
@@ -24,17 +20,17 @@ To run DEANONYMIZATOR, ensure you have the following dependencies installed:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/DEANONYMIZATOR.git
-   cd DEANONYMIZATOR
+   git clone https://github.com/Caminof/deanonymizator.git
+   cd deanonymizator
    ```
 
 2. Install the required Python packages:
    ```bash
-   pip install -r requirements.txt
+   pip install groq
    ```
 
 3. Set up your API key for Groq:
-   - Add your Groq API key to your environment variables or configure it in the script directly.
+   - Add your Groq API key (Free) in the script directly.
 
 ---
 
@@ -46,7 +42,7 @@ DEANONYMIZATOR can be run directly from the command line. The script requires th
 
 #### Example Command:
 ```bash
-python deanonymizator.py anonymous.txt suspect1.txt suspect2.txt
+python3 deanonymizator.py anonymous.txt suspect1.txt suspect2.txt
 ```
 
 #### Output:
